@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu
+    android:id="@+id/nav_drawer_menu"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showInd="navigation_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <group
+        android:id="@+id/nav_drawer_mainGroup"
+        android:checkableBehavior="single"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <item
+            android:id="@+id/nav_drawer_mainPage"
+            android:title="Main Page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <item
+            android:id="@+id/nav_drawer_secondPage"
+            android:title="Secondary Page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </group>
+</menu>

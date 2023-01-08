@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <resources>
+    <declare-styleable name="AppTheme">
+        <attr name="PrimaryAccentColor" format="color" />
+        <attr name="PrimaryAccentTextColor" format="color" />
+    </declare-styleable>  
     <!-- Base theme applied regardless of API level -->
     <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="windowNoTitle">true</item>
@@ -11,6 +15,9 @@
         <item name="colorControlActivated">@color/accentColor</item>
         <item name="colorControlHighlight">@color/accentColor</item>
         <item name="windowActionModeOverlay">false</item>
+
+        <item name="PrimaryAccentColor">#C5F12C</item>
+        <item name="PrimaryAccentTextColor">#313842</item>
     </style>
 
     <!-- Default App theme applied if no resource style overrides for specific API level -->
@@ -24,5 +31,11 @@
 
     <!-- Default Splash Screen theme applied if no resource style overrides for specific API level -->
     <style name="AppTheme.Splash" parent="AppTheme.Splash.Base">
+    </style>
+
+    <style name="MenuTextAppearance">
+        <item name="android:textSize">30sp</item>
+        <item name="colorPrimary">?attr/PrimaryAccentTextColor</item>
+        <item name="colorControlHighlight">?attr/PrimaryAccentColor</item>
     </style>
 </resources>
