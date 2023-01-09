@@ -73,6 +73,7 @@
     <Compile Include="Views\BaseActivity.cs" />
     <Compile Include="Views\BaseFragment.cs" />
     <Compile Include="Views\Main\MainContainerActivity.cs" />
+    <Compile Include="Views\Main\ContactPageFragment.cs" />
     <Compile Include="Views\Main\SecondFragment.cs" />
     <Compile Include="Views\Main\MainFragment.cs" />
     <Compile Include="Views\Splash\SplashActivity.cs" />
@@ -87,6 +88,12 @@
       <Version>8.0.2</Version>
     </PackageReference>
     <PackageReference Include="MvvmCross.DroidX.Material">
+      <Version>8.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.DroidX.RecyclerView">
+      <Version>8.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.Plugin.FieldBinding">
       <Version>8.0.2</Version>
     </PackageReference>
     <PackageReference Include="Serilog.Extensions.Logging">
@@ -173,6 +180,16 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\fragment_second.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\item_contact_card.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\fragment_contact_page.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

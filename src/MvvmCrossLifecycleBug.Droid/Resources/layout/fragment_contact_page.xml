@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:text="FirstName LastName"
+        app:MvxBind="Text Format('{0} {1}', Contact.FirstName, Contact.LastName)"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Phone: number"
+        app:MvxBind="Text Format('Phone: {0}', Contact.Phone)"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Email: example@example.com"
+        app:MvxBind="Text Format('Email: {0}', Contact.Email)"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Location: City, Country"
+        app:MvxBind="Text Format('Location: {0}, {1}', Contact.City, Contact.Country)"
+        />
+</LinearLayout>

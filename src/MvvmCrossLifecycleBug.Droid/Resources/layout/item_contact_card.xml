@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomSpace"
+        android:id="@+id/fragment_contactCard"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        app:cardBackgroundColor="#99d8ff"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32dp"
+            android:text="FirstName LastName"
+            app:MvxBind="Text Format('{0} {1}', FirstName, LastName)"
+            />
+    </androidx.cardview.widget.CardView>
+    <Space
+        app:layout_constraintTop_toBottomOf="@+id/fragment_contactCard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/bottomSpace"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
