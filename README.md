@@ -1,0 +1,1 @@
+With this repo I am attempting to track down an issue I've been having with the lifecycle of my ViewModels with MvvmCross. In another project I have ViewModels being constructed when they should not be my Android activity is recreated.
